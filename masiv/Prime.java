@@ -23,7 +23,7 @@ public class Prime {
         primos[1] = 2;
         ord = 2;
         squere = 9;
-        Integer initMultiplos=  (int) Math.ceil(firstsPrimes*0.03);
+        Integer initMultiplos=  (int) Math.ceil(firstsPrimes*0.3);
         multiplos = new int[initMultiplos];
         while (index < firstsPrimes) {
             do {
