@@ -12,6 +12,10 @@ public class Prime {
     private static int primos[];
     private static int multiplos[];
 
+    /**
+     *método que recibe la cantidad de números primos a ser encontrados
+     * @param firstsPrimes
+     */
     public void findPrimos(int firstsPrimes){
         primos = new int[firstsPrimes+1];
         int numero=1;
@@ -34,11 +38,12 @@ public class Prime {
         }
 
     }
-    
+
     /**
-     * calcula los multiplos por si mismo (el cuadrado)
+     *calcula los multiplos por si mismo (el cuadrado)
+     * @param p
+     * @param num
      */
-    
     private void getMultipleSquare(int[] p, int num) {
         if( num == squere) {
             ord++;
@@ -47,10 +52,12 @@ public class Prime {
         }
     }
 
-     /**
-     * valida si es primo
+    /**
+     *valida si es primo
+     * @param p
+     * @param mult
+     * @param numero
      */
-
     private void isPrime(int[] p, int[]  mult, int numero) {
         while (n < ord && prime) {
             getMultiple(p,numero);
@@ -61,15 +68,19 @@ public class Prime {
     }
 
     /**
-     * agrega los numeros multiplos al arreglo de multiplos
+     *agrega los números múltiplos al arreglo de múltiplos
+     * @param p
+     * @param j
      */
-    
     private void getMultiple(int[] p, int j) {
         while (multiplos[n]<j)
             multiplos[n] += 2 *  p[n];
     }
 
-
+    /**
+     *
+     * @return
+     */
     public static int[] getPrimos() {
         return primos;
     }
