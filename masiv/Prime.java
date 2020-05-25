@@ -34,7 +34,11 @@ public class Prime {
         }
 
     }
-    //calcula los multiplos por si mismo (el cuadrado)
+    
+    /**
+     * calcula los multiplos por si mismo (el cuadrado)
+     */
+    
     private void getMultipleSquare(int[] p, int num) {
         if( num == squere) {
             ord++;
@@ -43,7 +47,10 @@ public class Prime {
         }
     }
 
-//valida si es primo
+     /**
+     * valida si es primo
+     */
+
     private void isPrime(int[] p, int[]  mult, int numero) {
         while (n < ord && prime) {
             getMultiple(p,numero);
@@ -53,7 +60,10 @@ public class Prime {
         }
     }
 
-    //agrega los numeros multiplos al arreglo de multiplos
+    /**
+     * agrega los numeros multiplos al arreglo de multiplos
+     */
+    
     private void getMultiple(int[] p, int j) {
         while (multiplos[n]<j)
             multiplos[n] += 2 *  p[n];
